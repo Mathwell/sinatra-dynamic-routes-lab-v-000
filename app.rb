@@ -22,7 +22,7 @@ get '/say/:number/:phrase' do
   phrase=params[:phrase]
   final_phrase=""
   for i in 1..n do
-    final_phrase+=final_phrase+phrase
+    final_phrase+="#{phrase}\n"
   end
   final_phrase
 end
