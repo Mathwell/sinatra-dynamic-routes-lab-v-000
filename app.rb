@@ -19,12 +19,12 @@ class App < Sinatra::Base
 
 get '/say/:number/:phrase' do
   n=params[:number].to_i
-  @phrase=params[:phrase]
-  @final_phrase=""
-  for i in 1..@n do
-    @final_phrase=@final_phrase+@phrase
+  phrase=params[:phrase]
+  final_phrase=""
+  for i in 1..n do
+    final_phrase+=final_phrase+phrase
   end
-  @final_phrase
+  final_phrase
 end
 
 get '/say/:word1/:word2/:word3/:word4/:word5' do
