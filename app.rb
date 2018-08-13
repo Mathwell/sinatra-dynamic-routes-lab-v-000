@@ -44,6 +44,6 @@ get '/:operation/:number1/:number2' do
        answer = "Unknown"
      end
      answer.to_s
-  
+
 end
 end
